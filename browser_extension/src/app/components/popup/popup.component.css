@@ -1,0 +1,161 @@
+.popup-container {
+    width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #cae0f7;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: groove;
+}
+
+.definition-container {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    gap: 32px
+}
+
+.layout input {
+    flex-grow: 1;.popup-container {
+        width: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #f8f9fa;
+    }
+    
+    .definition-container {
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .layout {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .layout input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+    }
+    
+    .button {
+        text-align: center;
+    }
+    
+    .error {
+        color: red;
+        margin-top: 10px;
+    }
+    
+    .meanings-container {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    .meanings-container h3 {
+        margin-top: 15px;
+    }
+    
+    .meanings.partOfSpeech {
+        font-weight: 800 !important;
+    }
+    
+    .meanings-container .definitions {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .meanings-container .definitions li {
+        margin-bottom: 5px;
+    }
+    
+    .primary-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .primary-button:hover {
+        background-color: #0056b3;
+    }
+    
+}
+
+.button {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.meanings-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.meanings-container h3 {
+    margin-top: 15px;
+}
+
+.meanings-container .partOfSpeech {
+    font-weight: 800;
+}
+
+.meanings-container .definitions {
+    list-style-type: none;
+    padding: 0;
+}
+
+.meanings-container .definitions li {
+    margin-bottom: 5px;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.input-box {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meaning-container {
+    background: #e9eaf6;
+    padding: 2px;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+#wordInput {
+    border-radius: 6px;
+}
+
+.new-design {
+    font-weight: 800;
+}

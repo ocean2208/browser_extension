@@ -1,0 +1,35 @@
+<div class="popup-container">
+    <h1>Dictionary Extension</h1>
+    <div class="definition-container">
+        <div class="input-box">
+            <label for="wordInput">Get Meaning</label>
+            <input type="text" id="wordInput" placeholder="Enter a word" required [(ngModel)]="word" >
+            <div class="button-wrapper">
+                <button id="searchButton" class="primary-button" (click)="searchWord()">Search</button>
+            </div>
+            <div>
+                <button id="analyseData" class="second-button" (click)="analyseData()">Double-click to Analyze</button>
+            </div>
+            <div>
+                <button id="analyseData" class="second-button" (click)="summarizeText(alltext)">Summarize Text</button>
+            </div>
+        </div>
+        <div class="error" *ngIf="errorMessage">Please enter valid word</div>
+        <div class="meaning-container" *ngIf="definition && !errorMessage">
+            <ul class="meanings" *ngFor="let item of definition">
+                <li class="partOfSpeech">
+                    <div class="new-design">
+                        {{ item.partOfSpeech }}
+                    </div>
+                    <ul class="definitions" *ngFor="let meaning of item.definitions">
+                        <li>{{ meaning.definition }}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="scrapeData" *ngIf="analysedData">
+            <p>{{ alltext }}</p>
+        </div>
+        <!-- <div class="definition" *ngIf="definition && !errorMessage">{{ definition }}</div> -->
+    </div>
+</div>

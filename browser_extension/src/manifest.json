@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Dictionary Extension",
+    "version": "1.0",
+    "description": "A dictionary extension to look up word meanings.",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "contextMenus",
+      "scripting",
+      "storage",
+      "nativeMessaging"
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "assets/icons/book-icon-logo.png",
+        "48": "assets/icons/book-icon-logo.png",
+        "128": "assets/icons/book-icon-logo.png"
+      }
+    },
+    "icons": {
+        "16": "assets/icons/book-icon-logo.png",
+        "48": "assets/icons/book-icon-logo.png",
+        "128": "assets/icons/book-icon-logo.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["contentScript.js"]
+        }
+    ]
+}
+  
